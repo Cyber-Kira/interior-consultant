@@ -1,0 +1,29 @@
+body {
+  @extend %font-add;
+  @include font($size: 0.875rem, $height: 1.063rem, $weight: 400);
+  color: $color-light;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  @extend %font-add;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 46px;
+  @include media-laptop {
+    font-size: 48px;
+    line-height: 61px;
+  }
+}
+
+p {
+  @extend %font-add;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}

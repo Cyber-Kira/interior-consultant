@@ -4,53 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href=" style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/sass/style.css" />
     <title>Interior Consultant</title>
   </head>
-  <body>
-    <header class="header">
+  <body class="dark-theme">
+    <header class="header wrapper">
       <a class="logo" href="#">This Interior</a>
-      <ul>
+      <ul class="navigation d-none">
         <li><a href="#">Home</a></li>
         <li><a href="#">Collection</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
+      <span class="hamburger">
+        <span class="hamburger__line"></span>
+      </span>
     </header>
     <main class="main">
-      <section class="hero">
-        <h1 class="hero__title">Modern interior</h1>
-        <p class="hero__text">
-          A full-Service residential & commercial interior design and staging
-          company offering professional organizing & eco-services.
-        </p>
-        <a class="hero__link" href="#"
-          >Read more <span class="ico_next"></span
-        ></a>
-      </section>
-      <section class="promo">
-        <img
-          src="src/img/photo1.png"
-          alt="White room with an yellow shelf on a wall"
-        />
-        <div class="card">
-          <div class="card__hero">
+      <div class="wrapper row">
+        <section class="hero wrapper">
+          <h1 class="hero__title">Modern interior</h1>
+          <p class="hero__text">
+            A full-Service residential & commercial interior design and staging
+            company offering professional organizing & <br />
+            eco-services.
+          </p>
+          <a class="hero__link" href="#"
+            >Read more
+            <object
+              data="/src/img/iconmonstr-arrow-right-thin.svg"
+              type="image/svg+xml"
+              class="ico_next"
+            >
+              Your browser does not supports SVG
+            </object></a
+          >
+        </section>
+        <section class="promo">
+          <div class="wrapper">
             <img
-              class="card__image"
-              src="src/img/photo2.png"
-              alt="Front photo of Aliza Webber"
+              class="promo__image"
+              src="src/img/photo1.png"
+              alt="White room with an yellow shelf on a wall"
             />
-            <span class="card__title">Aliza Webber</span>
-            <span class="card__job">Interior Designer</span>
+            <div class="card">
+              <div class="card__hero">
+                <img
+                  class="card__image"
+                  src="src/img/photo2.png"
+                  alt="Front photo of Aliza Webber"
+                />
+                <div class="card__credentials">
+                  <span class="card__title">Aliza Webber</span>
+                  <span class="card__job">Interior Designer</span>
+                </div>
+              </div>
+              <p class="card__content">Designed in 2020 by Aliza Webber</p>
+            </div>
           </div>
-          <p class="card__content">Designed in 2020 by Aliza Webber</p>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <p class="footer__text">
-        created by <a class="footer__link" href="#">CyberKira</a> -
-        devChallenges.io
+        created by
+        <a
+          class="footer__link"
+          href="https://devchallenges.io/portfolio/Cyber-Kira"
+          target="_blank"
+          >CyberKira</a
+        >
+        - devChallenges.io
       </p>
     </footer>
   </body>
