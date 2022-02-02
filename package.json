@@ -1,0 +1,25 @@
+{
+  "name": "interior-consultant",
+  "version": "1.0.0",
+  "description": "<!-- Please update value in the {}  -->",
+  "main": "index.js",
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.49.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "style": "sass --watch src/sass/style.scss src/sass/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cyber-Kira/interior-consultant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cyber-Kira/interior-consultant/issues"
+  },
+  "homepage": "https://github.com/Cyber-Kira/interior-consultant#readme"
+}
