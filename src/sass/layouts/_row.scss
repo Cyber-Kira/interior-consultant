@@ -1,7 +1,23 @@
 .row {
-  @include media-mobile {
+  @include media-laptop {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .hero {
+      width: 45%;
+    }
+
+    .promo {
+      width: 55%;
+    }
   }
+}
+
+.main {
+  height: calc(100% - 130px);
+  display: flex;
+}
+
+.content {
+  flex: 1 0 auto;
 }

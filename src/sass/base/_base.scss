@@ -2,6 +2,9 @@ body {
   @extend %font-add;
   @include font($size: 0.875rem, $height: 1.063rem, $weight: 400);
   color: $color-light;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 img {
@@ -10,20 +13,16 @@ img {
 
 h1 {
   @extend %font-add;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 46px;
+  @include font($size: 36px, $height: 46px, $weight: 500);
   @include media-laptop {
-    font-size: 48px;
-    line-height: 61px;
+    @include font($size: 48px, $height: 61px, $weight: 500);
   }
 }
 
 p {
-  @extend %font-add;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  @extend %font-prim;
+  @include font($size: 14px, $height: 17px, $weight: 400);
+  @include media-laptop {
+    @include font($size: 24px, $height: 29px, $weight: 400);
+  }
 }
