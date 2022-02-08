@@ -26,3 +26,7 @@ p {
     @include font($size: 24px, $height: 29px, $weight: 400);
   }
 }
+
+a:focus {
+  outline: 1px solid $color-light-gray;
+}
