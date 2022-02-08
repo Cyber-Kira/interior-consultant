@@ -9,12 +9,12 @@
     text-decoration: none;
     margin-left: 5.375rem;
     border: 2px solid $color-background-dark;
-    // padding: 0.6em 0;
+    padding: 0.6em 0;
     @extend %font-prim;
     @extend %transition;
     @include font($size: 1.125rem, $height: 1.375rem, $weight: 500);
     &:after {
-      @extend %animation-bottom-right-to-left;
+      @include background-right-to-left(2px);
     }
     &:hover::after,
     &:focus::after {
@@ -30,21 +30,4 @@
       }
     }
   }
-}
-
-%transition {
-  transition: transform 0.3s ease-in;
-}
-
-%animation-bottom-right-to-left {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: $color-light;
-  transform-origin: bottom right;
-  @extend %transition;
 }
