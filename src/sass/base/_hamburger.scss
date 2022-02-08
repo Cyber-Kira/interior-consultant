@@ -15,11 +15,13 @@
     @extend %hamburger-line;
     top: 0;
     right: 0;
+    transition: transform 0.4s;
   }
   &::after {
     @extend %hamburger-line;
     bottom: 0;
     right: 0;
+    transition: transform 0.4s;
   }
   @include media-tablet {
     display: none;
@@ -30,4 +32,5 @@
   @extend %hamburger-line;
   top: calc(50% - 1.5px);
   right: 0;
+  transition: transform 0.3s;
 }

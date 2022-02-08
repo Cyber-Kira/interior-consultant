@@ -3,5 +3,73 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 12px;
+  padding: 25px 12px;
+  @include media-laptop {
+    padding: 42px 0;
+  }
+}
+
+.header.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  background-color: $color-background-dark;
+  padding: 0;
+  .navigation {
+    display: block;
+    text-align: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    transform: translateY(0%);
+
+    li:first-child {
+      a {
+        margin: 0;
+      }
+    }
+    @for $i from 0 through 4 {
+      li:nth-child(#{$i}) a {
+        transition-delay: (0.5 * $i / 8 + 0.2) + s;
+      }
+    }
+    a {
+      display: block;
+      margin: 24px 0 0;
+      padding: 8px 0;
+      opacity: 1;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      transform: translateX(0%);
+      @include font($size: 18px, $height: 22px, $weight: 700);
+    }
+  }
+  > a {
+    display: none;
+  }
+  > .hamburger {
+    position: fixed;
+    right: 12px;
+    top: 33px;
+    overflow: hidden;
+    &::before {
+      @extend %hamburger-line;
+      top: calc(50% - 1.5px);
+      transform: rotate(45deg);
+    }
+    &::after {
+      @extend %hamburger-line;
+      top: calc(50% - 1.5px);
+      transform: rotate(-45deg);
+    }
+  }
+  .hamburger__line {
+    transform: translateX(-100%);
+  }
 }
