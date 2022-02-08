@@ -557,6 +557,9 @@ p {
   text-decoration: none;
   padding: 25px 0;
 }
+.hero__link object {
+  pointer-events: none;
+}
 .hero__link .ico_next {
   display: inline-block;
   width: 24px;
