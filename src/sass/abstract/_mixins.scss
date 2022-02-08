@@ -31,3 +31,16 @@
     @content;
   }
 }
+
+@mixin background-right-to-left($bg-height) {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: $bg-height;
+  bottom: 0;
+  left: 0;
+  background-color: $color-light;
+  transform-origin: bottom right;
+  @extend %transition;
+}
