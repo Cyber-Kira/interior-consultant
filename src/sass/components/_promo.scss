@@ -1,11 +1,10 @@
 .promo {
   position: relative;
+  display: flex;
+  justify-content: center;
   margin-bottom: 100px;
   &__image {
     width: 100%;
     max-width: 737px;
-  }
-  @include media-laptop {
-    margin-bottom: 50px;
   }
 }

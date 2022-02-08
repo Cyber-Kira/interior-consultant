@@ -475,6 +475,15 @@ p {
 .main {
   height: calc(100% - 130px);
   display: flex;
+  justify-content: center;
+}
+.main div {
+  max-width: 737px;
+}
+@media (min-width: 1280px) {
+  .main div {
+    max-width: 1280px;
+  }
 }
 
 .content {
@@ -501,7 +510,6 @@ p {
   text-decoration: none;
   margin-left: 5.375rem;
   border: 2px solid #181719;
-  padding: 0.6em 0;
   font-style: normal;
   font-weight: 500;
   font-size: 1.125rem;
@@ -514,6 +522,9 @@ p {
 @media (min-width: 720px) {
   .navigation {
     display: flex;
+  }
+  .navigation li:first-child a {
+    margin: 0;
   }
 }
 
@@ -579,16 +590,13 @@ p {
 
 .promo {
   position: relative;
+  display: flex;
+  justify-content: center;
   margin-bottom: 100px;
 }
 .promo__image {
   width: 100%;
   max-width: 737px;
-}
-@media (min-width: 1280px) {
-  .promo {
-    margin-bottom: 50px;
-  }
 }
 
 .card {
