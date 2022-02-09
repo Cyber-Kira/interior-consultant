@@ -17,9 +17,6 @@
   height: calc(100% - 130px);
   display: flex;
   justify-content: center;
-  div {
-    max-width: 737px;
-  }
   @include media-laptop {
     div {
       max-width: $content-width;
