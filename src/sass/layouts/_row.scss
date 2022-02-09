@@ -17,11 +17,6 @@
   height: calc(100% - 130px);
   display: flex;
   justify-content: center;
-  @include media-laptop {
-    div {
-      max-width: $content-width;
-    }
-  }
 }
 
 .content {

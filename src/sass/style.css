@@ -488,14 +488,6 @@ a:focus {
   display: flex;
   justify-content: center;
 }
-.main div {
-  max-width: 737px;
-}
-@media (min-width: 1280px) {
-  .main div {
-    max-width: 1280px;
-  }
-}
 
 .content {
   flex: 1 0 auto;
@@ -665,6 +657,9 @@ a:focus {
 }
 .hero__link object {
   pointer-events: none;
+  width: 24px;
+  height: 24px;
+  background-image: url("/src/img/iconmonstr-arrow-right-thin.png");
 }
 .hero__link .ico_next {
   display: inline-block;
