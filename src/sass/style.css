@@ -591,7 +591,6 @@ a:focus {
   position: fixed;
   justify-content: space-between;
   list-style-type: none;
-  overflow: hidden;
 }
 .navigation a {
   position: relative;
